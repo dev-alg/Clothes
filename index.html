@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MODA — متجر الملابس</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f5f4f0;color:#171717;font-family:Arial,"Tajawal",sans-serif}
+header{background:#fff;border-bottom:1px solid #ddd;position:sticky;top:0;z-index:10}
+.nav{max-width:1180px;margin:auto;padding:17px 22px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:25px;font-weight:900}.logo span{font-weight:300}
+nav{display:flex;gap:25px}nav a{text-decoration:none;color:#555}
+.cart{border:0;background:#171717;color:#fff;padding:10px 16px;border-radius:22px;font-weight:700}
+.hero,.section{max-width:1180px;margin:auto;padding:55px 22px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.eyebrow{font-size:12px;letter-spacing:2px;color:#777}
+h1{font-size:clamp(45px,6vw,76px);line-height:.98;margin:15px 0}
+.hero p{font-size:18px;line-height:1.8;color:#666}
+.btn{display:inline-block;background:#171717;color:#fff;text-decoration:none;padding:14px 22px;border-radius:12px}
+.modelbox{height:510px;border-radius:28px;overflow:hidden;background:#e9e8e3;box-shadow:0 15px 40px #00000012}
+iframe{width:100%;height:100%;border:0;display:block}
+.section-head{margin-bottom:22px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid #ddd;border-radius:20px;overflow:hidden;box-shadow:0 8px 30px #00000008}
+.card .modelbox{height:390px;border-radius:0;box-shadow:none}
+.info{padding:18px}
+.info h3{margin:0 0 5px}.muted{color:#777;font-size:14px}
+.row{display:flex;align-items:center;justify-content:space-between;margin-top:15px}
+.price{font-size:19px;font-weight:900}
+.buy{border:0;background:#171717;color:#fff;padding:10px 14px;border-radius:10px;cursor:pointer}
+.note{font-size:12px;color:#888;margin-top:10px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:25px}
+.feature{background:#fff;border:1px solid #ddd;border-radius:18px;padding:20px}
+.feature b{display:block;margin-bottom:7px}
+@media(max-width:850px){
+nav{display:none}.hero{grid-template-columns:1fr}.modelbox{height:430px}.grid{grid-template-columns:1fr}.features{grid-template-columns:1fr}
+}
+
+.model-lazy{
+  width:100%;height:100%;background:#e9e8e3;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+.model-preview{
+  width:100%;height:100%;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:12px;
+  background:linear-gradient(135deg,#efeee9,#e3e1da);
+}
+.model-preview strong{
+  width:64px;height:64px;border-radius:18px;
+  display:flex;align-items:center;justify-content:center;
+  background:#171717;color:#fff;font-size:20px;
+}
+.model-preview button{
+  border:0;background:#171717;color:#fff;padding:13px 20px;
+  border-radius:12px;font-weight:700;cursor:pointer;
+}
+.model-preview small{color:#777;font-size:12px}
+.model-lazy iframe{width:100%;height:100%;border:0;display:block}
+
+</style>
+</head>
+<body>
+
+<header>
+<div class="nav">
+<div class="logo">MODA<span>3D</span></div>
+<nav><a href="#products">المنتوجات</a><a href="#about">علاش تختاري منتجاتنا</a></nav>
+<button class="cart">السلة (0)</button>
+</div>
+</header>
+
+<section class="hero">
+<div>
+<div class="eyebrow">ستايلك، اختيارك</div>
+<h1>لباسك على ذوقك<br>ستايل يليق بيك.</h1>
+<p>اكتشفي تشكيلتنا من الملابس واختاري القطعة لي تعجبك بسهولة. تلقاي التفاصيل والسعر وتقدري تديري طلبك بكل سهولة.</p>
+<a class="btn" href="#products">شوفي التشكيلة</a>
+</div>
+<div class="modelbox">
+<div class="model-lazy" data-src="https://sketchfab.com/models/ab78848ab3404a2e877929d5f8774c54/embed?autostart=1&ui_theme=dark&ui_infos=0&ui_watermark=1&autospin=0.25&camera=0" data-title="3D Hoodie">
+      <div class="model-preview">
+        <strong>3D</strong>
+        <button type="button">شوفي المنتج</button>
+        <small>اضغطي باش تشوفي المنتج</small>
+      </div>
+    </div>
+</div>
+</section>
+
+<section class="section" id="products">
+<div class="section-head">
+<div class="eyebrow">تشكيلتنا</div>
+<h2>اختاري الستايل لي يناسبك</h2>
+</div>
+
+<div class="grid">
+<article class="card">
+<div class="modelbox">
+<div class="model-lazy" data-src="https://sketchfab.com/models/5a21282b2e454d1696547148f617d3d0/embed?autostart=1&ui_theme=dark&ui_infos=0&ui_watermark=1&autospin=0.25" data-title="3D T-Shirt">
+      <div class="model-preview">
+        <strong>3D</strong>
+        <button type="button">شوفي المنتج</button>
+        <small>اضغطي باش تشوفي المنتج</small>
+      </div>
+    </div>
+</div>
+<div class="info">
+<h3>تيشيرت كلاسيك</h3><div class="muted">تيشيرت أنيق للخرجات اليومية</div>
+<div class="row"><span class="price">2,900 دج</span><button class="buy">أضف للسلة</button></div>
+<div class="note">المجسم: Tabbuso — Sketchfab — CC Attribution</div>
+</div>
+</article>
+
+<article class="card">
+<div class="modelbox">
+<div class="model-lazy" data-src="https://sketchfab.com/models/2c674228f1e946b5b8f508f8f818e130/embed?autostart=1&ui_theme=dark&ui_infos=0&ui_watermark=1&autospin=0.25" data-title="3D Hoodie">
+      <div class="model-preview">
+        <strong>3D</strong>
+        <button type="button">شوفي المنتج</button>
+        <small>اضغطي باش تشوفي المنتج</small>
+      </div>
+    </div>
+</div>
+<div class="info">
+<h3>هودي عصري</h3><div class="muted">هودي مريح وراقي</div>
+<div class="row"><span class="price">5,900 دج</span><button class="buy">أضف للسلة</button></div>
+<div class="note">المجسم: ShoyoX — Sketchfab — CC Attribution</div>
+</div>
+</article>
+
+<article class="card">
+<div class="modelbox">
+<div class="model-lazy" data-src="https://sketchfab.com/models/8f3b4b3a188546da9afb756eac7ebba8/embed?autostart=1&ui_theme=dark&ui_infos=0&ui_watermark=1&autospin=0.25" data-title="3D Jacket">
+      <div class="model-preview">
+        <strong>3D</strong>
+        <button type="button">شوفي المنتج</button>
+        <small>اضغطي باش تشوفي المنتج</small>
+      </div>
+    </div>
+</div>
+<div class="info">
+<h3>جاكيت راقية</h3><div class="muted">جاكيت ستايل وعصرية</div>
+<div class="row"><span class="price">8,900 دج</span><button class="buy">أضف للسلة</button></div>
+<div class="note">المجسم: mikeryo iraidamon — Sketchfab — CC Attribution</div>
+</div>
+</article>
+</div>
+</section>
+
+<section class="section" id="about">
+<h2>اختاري لباسك بكل سهولة</h2>
+<div class="features">
+<div class="feature"><b>تشكيلة متنوعة</b><span class="muted">ملابس مختارة بعناية وبستايلات مختلفة.</span></div>
+<div class="feature"><b>ستايل على ذوقك</b><span class="muted">اختاري القطعة لي تناسب ذوقك ولوكك.</span></div>
+<div class="feature"><b>طلب ساهل وسريع</b><span class="muted">تصفحي المنتجات من الهاتف ولا الكمبيوتر وطلبي بكل سهولة.</span></div>
+</div>
+</section>
+
+
+
+<script>
+(function () {
+  document.querySelectorAll('.model-lazy').forEach(function (box) {
+    var preview = box.querySelector('.model-preview');
+    var button = box.querySelector('button');
+
+    function openModel() {
+      if (box.getAttribute('data-loaded') === '1') return;
+      box.setAttribute('data-loaded', '1');
+
+      var iframe = document.createElement('iframe');
+      iframe.title = box.getAttribute('data-title') || '3D Model';
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.setAttribute('allow', 'autoplay; fullscreen; xr-spatial-tracking');
+      iframe.src = box.getAttribute('data-src') +
+        '?autostart=1&ui_theme=dark&ui_infos=0&ui_watermark=1&autospin=0.15&camera=0';
+
+      box.innerHTML = '';
+      box.appendChild(iframe);
+    }
+
+    button.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      openModel();
+    });
+
+    preview.addEventListener('click', openModel);
+  });
+
+  var count = 0;
+  document.querySelectorAll('.buy').forEach(function (b) {
+    b.addEventListener('click', function () {
+      count++;
+      var cart = document.querySelector('.cart');
+      if (cart) cart.textContent = 'السلة (' + count + ')';
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
